@@ -34,9 +34,8 @@ class CashRegister
 
   def void_last_transaction
     @total = @total - @last_transaction
-
-
   end
+end
 
 
 
@@ -55,7 +54,7 @@ class CashRegister
 
     # binding.pry
 
-end
+
 # you should try making it 100.0, and converting
 # the @discount to a float
 #
