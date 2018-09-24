@@ -22,8 +22,8 @@ class CashRegister
 
 
   def apply_discount
-    add_item
-    @total = 1000
+    add_item(total, price, quantity = 0)
+    @total += (price)
      @total * @discount
       @discount/100.0.to_f
        @total - @discount
@@ -31,6 +31,8 @@ class CashRegister
 
     # @discount.to_f / 100.0
     # @total - @discount = @total     # @total = @total - @discount
+    #
+
     # binding.pry
   end
 end
