@@ -18,7 +18,7 @@ class CashRegister
      if @discount != 0
        discount_amt = @total * @discount /100.0.to_f
        @total = @total - discount_amt
-       "After the discount, the total comes to #{@total}."
+       "After the discount, the total comes to #{@total.to_i}."
 
      else
 
