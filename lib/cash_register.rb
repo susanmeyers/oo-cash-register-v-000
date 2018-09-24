@@ -10,8 +10,10 @@ class CashRegister
   end
 
 
-  def add_item(total, price, quantity = 1)
+  def add_item(name, price, quantity = 1)
     @total += (price * quantity)
+    @items << name
+    
   end
 
 
@@ -27,7 +29,11 @@ class CashRegister
      end
    end
 
-     
+   
+
+   
+
+
 
 
 
@@ -39,7 +45,7 @@ class CashRegister
     #
 
     # binding.pry
-  end
+  
 end
 # you should try making it 100.0, and converting
 # the @discount to a float
